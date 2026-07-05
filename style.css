@@ -1,0 +1,56 @@
+:root {
+    --green: #1f4f3d;
+    --text: #2b2b2b;
+    --light: #f8f8f6;
+    --border: #d8d8d8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--text);
+    background: #ececec;
+    padding: 40px;
+}
+
+.resume {
+    width: 8.5in;
+    min-height: 11in;
+    margin: auto;
+    background: white;
+    padding: .5in;
+    box-shadow: 0 10px 35px rgba(0,0,0,.12);
+}
+
+h1,h2,h3{
+    font-family:"Cormorant Garamond", serif;
+    color:var(--green);
+}
+
+@page{
+    size:letter;
+    margin:.35in;
+}
+
+@media print{
+
+    body{
+        background:white;
+        padding:0;
+        -webkit-print-color-adjust:exact;
+        print-color-adjust:exact;
+    }
+
+    .resume{
+        width:100%;
+        min-height:100%;
+        box-shadow:none;
+        margin:0;
+    }
+
+}
